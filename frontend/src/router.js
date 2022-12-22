@@ -11,6 +11,9 @@ import OrderDetail from "./components/listers/OrderDetail"
 import InventoryManager from "./components/listers/InventoryCards"
 import InventoryDetail from "./components/listers/InventoryDetail"
 
+import DevliveryManager from "./components/listers/DevliveryCards"
+import DevliveryDetail from "./components/listers/DevliveryDetail"
+
 
 export default new Router({
     // mode: 'history',
@@ -36,6 +39,17 @@ export default new Router({
                 path: '/inventories/:id',
                 name: 'InventoryDetail',
                 component: InventoryDetail
+            },
+
+            {
+                path: '/devliveries',
+                name: 'DevliveryManager',
+                component: DevliveryManager
+            },
+            {
+                path: '/devliveries/:id',
+                name: 'DevliveryDetail',
+                component: DevliveryDetail
             },
 
 
